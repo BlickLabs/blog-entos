@@ -3852,3 +3852,9 @@ aside.widget-area {
     margin: 60px auto 0 auto;
   }
 }
+
+@media screen and (max-width: 895px) {
+  .site {
+    overflow: hidden;
+  }
+}
