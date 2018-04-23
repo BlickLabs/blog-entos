@@ -52,7 +52,7 @@
           </div>
           <div class="navbar-link-container">
             <a href="#blog" class="go-section">
-              <span class="fs-h4 gotham-medium">Blog</span>
+              <span class="fs-h4 gotham-medium blog-active">Blog</span>
             </a>
             <div class="navbar-decorator active-decorator"></div>
           </div>
