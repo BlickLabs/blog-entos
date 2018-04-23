@@ -202,6 +202,16 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 /*--------------------------------------------------------------
 # Entos
 --------------------------------------------------------------*/
+.navbar-link-container:hover .go-section span,
+.footer-section-container a:hover span {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.blog-active {
+  color: #ffffff;
+  font-weight: bold;
+}
 
 .post-info {
   color: #ececec;
@@ -3724,6 +3734,17 @@ aside.widget-area {
   }
 }
 
+@media screen and (min-width: 985px) and (max-width: 1200px) {
+  .hentry-wrapper-wicore {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .entry-header {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 984px) {
   body {
     margin: 100px 0 582px 0;
@@ -3771,9 +3792,18 @@ aside.widget-area {
     width: 100%;
   }
 
+  ./*site-content {
+    padding: 0 30px;
+  }*/
+
   .site-content-wrapper-wicore {
     margin-left: 40px !important;
-    margin-right: 40px !important;
+  }
+
+  .site-content-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
   }
 
   .wicore-article {
@@ -3787,6 +3817,7 @@ aside.widget-area {
   }
 
   .entry-header {
+    min-width: initial;
     max-width: 100%;
     width: 100%;
   }
@@ -3800,6 +3831,7 @@ aside.widget-area {
   }
 
   aside.widget-area {
+    margin-top: 60px;
     padding: 57px 40px 74px 40px;
   }
 
@@ -3812,15 +3844,44 @@ aside.widget-area {
   }
 
   .entry-hero-wrapper, .site-content-wrapper {
-    margin-left: 40px !important;
+    margin-left: 0px !important;
   }
 
   .hentry-wrapper {
+    height: auto;
     margin-left: 0 !important;
+    width: 100%;
   }
 
   footer.footer {
     left: 0;
+  }
+
+  .wicore-article:first-child > .hentry-wrapper-wicore .entry-header {
+    min-height: 250px !important;
+  }
+
+  .wicore-article:first-child > .hentry-wrapper-wicore .entry-title-wicore {
+    font-size: 19px;
+  }
+
+  .wicore-article:first-child > .hentry-wrapper-wicore .entry-content-wicore {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .wicore-article .entry-title-wicore {
+    font-size: 16px;
+  }
+
+  .wicore-article .entry-content-wicore {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .site-content-subtitle {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -3853,8 +3914,10 @@ aside.widget-area {
   }
 }
 
-@media screen and (max-width: 895px) {
-  .site {
-    overflow: hidden;
-  }
+/*@media screen and (max-width: 895px) {
+  
+}*/
+
+.site {
+  overflow: hidden;
 }
