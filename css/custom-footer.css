@@ -1,7 +1,6 @@
 .footer {
   -ms-flex-align: center;
   align-items: center;
-  /*background-image: linear-gradient(to right, rgba(58,58,58,0.1), #121212);*/
   bottom: 0;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +31,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
 }
 
 .footer-icon {
@@ -46,4 +45,23 @@
 
 .active-footer {
   color: #f00 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    left: 0;
+  }
+
+  .footer-section-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  
+  .footer-section-container a:nth-child(-n + 2) {
+    margin-bottom: 20px;
+  }
 }
