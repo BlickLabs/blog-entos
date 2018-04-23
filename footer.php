@@ -23,7 +23,7 @@
             <span class="footer-section fs-h4 gotham-medium">Ventures</span>
           </a>
           <a href="">
-            <span class="footer-section fs-h4 gotham-medium">Blog</span>
+            <span class="footer-section fs-h4 gotham-medium blog-active">Blog</span>
           </a>
           <a href="">
             <span class="footer-section fs-h4 gotham-medium">Contact</span>
