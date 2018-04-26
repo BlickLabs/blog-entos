@@ -223,10 +223,15 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 
 #content {
   /*margin-top: 25px;*/
-  background-image: url("img/backgrounds/ventures-background.jpg"), linear-gradient(to right, #3a3a3a, #121212);
+  background-image: url("img/backgrounds/ventures-background.png"), linear-gradient(to right, #3a3a3a, #121212);
   background-position: right top, right;
   background-repeat: no-repeat;
   background-size: 100%, cover;
+}
+
+.site-content-single {
+  background-image: url("img/backgrounds/single-post-background.png"), linear-gradient(to right, #3a3a3a, #121212) !important;
+  background-size: 65%, cover !important;
 }
 
 .widget-title {
@@ -281,7 +286,7 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 
 .widget-social-icons-container {
   background-color: transparent;
-  padding: 50px 35px 22px 35px;
+  padding: 50px 35px 22px 3px;
 }
 
 .widget-social-icons {
@@ -335,6 +340,7 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
   /*margin-top: 85px;*/
   margin-top: 0;
   margin-left: 136px !important;
+  padding-right: 140px !important;
   position: relative;
 }
 
@@ -389,17 +395,17 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 .hentry-wrapper-wicore {
   display: flex;
   flex-direction: row;
-  box-shadow: 0 2px 64px 0 rgba(0, 0, 0, 0.5);
   height: 231px;
 }
 
 .wicore-article:first-child > .hentry-wrapper-wicore {
+  box-shadow: 0 2px 64px 0 rgba(0, 0, 0, 0.5);
   flex-direction: column;
   height: initial;
 }
 
 .entry-posts-content {
-  background-image: linear-gradient(to right, #3e3e3e, #141212);
+  background-image: linear-gradient(to right, #3e3e3e, #1b1b1b);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -507,7 +513,6 @@ h1.entry-hero-title-wicore {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 
 .wicore-article .entry-title {
@@ -609,6 +614,7 @@ h1.entry-hero-title-wicore {
   margin-left: 136px !important;
   padding-bottom: 20px !important;
   padding-left: 0;
+  padding-right: 140px !important;
 }
 
 .entry-content img {
@@ -3750,6 +3756,10 @@ aside.widget-area {
     margin: 100px 0 582px 0;
   }
 
+  .go-section span {
+    font-size: 14px;
+  }
+
   nav.navbar {
     background-color: #3a3a3a;
     flex-direction: row;
@@ -3762,14 +3772,14 @@ aside.widget-area {
   }
 
   .navbar-logo {
-    height: 74px !important;
-    width: 60px !important;
+    height: 55px !important;
+    width: 45px !important;
   }
 
   .navbar-links-container {
     display: flex;
     flex-direction: row;
-    margin: 0 0 0 30px !important;
+    margin: 0 0 0 20px !important;
   }
 
   .navbar-link-container {
@@ -3781,7 +3791,7 @@ aside.widget-area {
   }
 
   .navbar-link-container:nth-child(3) {
-    margin: 0 30px;
+    margin: 0 20px;
   }
 
   .navbar-link-container .navbar-decorator {
@@ -3802,8 +3812,7 @@ aside.widget-area {
 
   .site-content-wrapper {
     padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .wicore-article {
@@ -3845,6 +3854,18 @@ aside.widget-area {
 
   .entry-hero-wrapper, .site-content-wrapper {
     margin-left: 0px !important;
+    padding-left: 30px;
+    padding-right: 30px !important;
+  }
+
+  .entry-hero-wrapper {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .entry-hero-title-wicore {
+    font-size: 1.5625rem;
+    line-height: 35px;
   }
 
   .hentry-wrapper {
