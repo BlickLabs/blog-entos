@@ -13,6 +13,14 @@
 <!DOCTYPE html>
   <html <?php language_attributes(); ?> >
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112166710-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112166710-2');
+    </script>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -64,7 +72,11 @@
           </div>
         </div>
       </nav>
+      <?php if (is_single()) { ?>
+      <div id="content" class="site-content site-content-single">
+      <?php } else { ?>
       <div id="content" class="site-content">
+      <?php } ?>
         <?php if ( get_header_image() ) : ?>
           <div class="header-image">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
