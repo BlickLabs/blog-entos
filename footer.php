@@ -16,16 +16,16 @@
           <img class="footer-logo" src="<?php echo get_template_directory_uri() . '/img/logos/logo-entos-white.png' ?>" alt="Logo in white color of Entos" />
         </div>
         <div class="footer-section-container">
-          <a href="">
+          <a href="http://entos.mx/#section_home">
             <span class="footer-section fs-h4 gotham-medium">Home</span>
           </a>
-          <a href="">
+          <a href="http://entos.mx/#section_ventures">
             <span class="footer-section fs-h4 gotham-medium">Ventures</span>
           </a>
-          <a href="">
+          <a href="http://blog.entos.mx/">
             <span class="footer-section fs-h4 gotham-medium blog-active">Blog</span>
           </a>
-          <a href="">
+          <a href="http://entos.mx/#section_contact">
             <span class="footer-section fs-h4 gotham-medium">Contact</span>
           </a>
         </div>
