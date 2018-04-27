@@ -41,31 +41,31 @@
 
       <nav class="navbar">
         <div class="">
-          <a href="index.html">
+          <a href="http://entos.mx/">
             <img class="navbar-logo" src="<?php echo get_template_directory_uri() . '/img/logos/logo-entos.png' ?>" alt="Logo red of Entos">
           </a>
         </div>
         <div class="navbar-links-container">
           <div class="navbar-link-container">
-            <a href="#home" class="go-section">
+            <a href="http://entos.mx/#section_home" class="go-section">
               <span class="fs-h4 gotham-medium">Home</span>
             </a>
             <div class="navbar-decorator"></div>
           </div>
           <div class="navbar-link-container">
-            <a href="#ventures" class="go-section">
+            <a href="http://entos.mx/#section_ventures" class="go-section">
               <span class="fs-h4 gotham-medium">Ventures</span>
             </a>
             <div class="navbar-decorator""></div>
           </div>
           <div class="navbar-link-container">
-            <a href="#blog" class="go-section">
+            <a href="http://blog.entos.mx/" class="go-section">
               <span class="fs-h4 gotham-medium blog-active">Blog</span>
             </a>
             <div class="navbar-decorator active-decorator"></div>
           </div>
           <div class="navbar-link-container">
-            <a href="#contact" class="go-section">
+            <a href="http://entos.mx/#section_contact" class="go-section">
               <span class="fs-h4 gotham-medium">Contact</span>
             </a>
             <div class="navbar-decorator" id="contact-decorator"></div>
